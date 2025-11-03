@@ -1,0 +1,59 @@
+/* Configuração da Fonte Inter e cores base para o projeto */
+:root {
+    --color-primary: #FF7F00; /* Laranja Moderno */
+    --color-dark: #1F2937; /* Cinza Escuro (Quase Preto) */
+    --color-light: #F9FAFB; /* Branco Suave */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-light);
+    scroll-behavior: smooth; /* Efeito "scroll suave" */
+}
+
+/* Estilo para a Navegação Fixa (Sticky Header) */
+#header {
+    transition: all 0.3s ease-in-out;
+}
+.header-scrolled {
+    background-color: rgba(31, 41, 55, 0.95); /* Fundo semi-transparente escuro ao rolar */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Classes para o lazy-load (Carregamento Progressivo) */
+.lazy-load {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.lazy-loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação sutil de entrada/scroll para as seções */
+.section-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos do formulário de contato */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(255, 127, 0, 0.3);
+}
