@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +11,33 @@
     <!-- Link para o arquivo CSS externo -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="text-gray-800">
 
     <!-- Ínicio da Navegação Fixa (Sticky Header) -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-4 bg-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <!-- Logotipo/Nome da Empresa (Substituir pelo logo real) -->
-            <a href="#home" class="text-2xl font-extrabold tracking-tight text-white transition-colors duration-300 hover:text-orange-300">
+            <a href="#home"
+                class="text-2xl font-extrabold tracking-tight text-white transition-colors duration-300 hover:text-orange-300">
                 <span class="text-orange-500">Criston</span>Serv
             </a>
             <!-- Menu de Navegação -->
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="text-white hover:text-orange-500 transition duration-300 font-medium">Home</a>
                 <a href="#sobre" class="text-white hover:text-orange-500 transition duration-300 font-medium">Sobre</a>
-                <a href="#servicos" class="text-white hover:text-orange-500 transition duration-300 font-medium">Serviços</a>
-                <a href="#contato" class="px-4 py-2 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600 transition duration-300 font-semibold">Contato</a>
+                <a href="#servicos"
+                    class="text-white hover:text-orange-500 transition duration-300 font-medium">Serviços</a>
+                <a href="#contato"
+                    class="px-4 py-2 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600 transition duration-300 font-semibold">Contato</a>
             </nav>
             <!-- Botão do Menu Mobile (SVG simples para ícone) -->
             <button class="md:hidden text-white focus:outline-none" aria-label="Menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
             </button>
         </div>
     </header>
@@ -39,13 +48,11 @@
         <section id="home" class="relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
             <!-- Imagem de Fundo de Alto Impacto (Substituir URL pela imagem real, idealmente com 'srcset') -->
             <div class="absolute inset-0">
-                <img src="/images/container1.jpg"
-                     sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1920px"
-                     alt="Imagem de fundo de um armazém de logística moderno"
-                     class="w-full h-full object-cover opacity-60 lazy-load"
-                     loading="lazy"
-                     onload="this.classList.add('lazy-loaded');"
-                     onerror="this.src='https://placehold.co/1920x1080/1F2937/FFFFFF?text=Log%C3%ADstica+CristonServ'">
+                <img src="/images/container1.jpg" sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1920px"
+                    alt="Imagem de fundo de um armazém de logística moderno"
+                    class="w-full h-full object-cover opacity-60 lazy-load" loading="lazy"
+                    onload="this.classList.add('lazy-loaded');"
+                    onerror="this.src='https://placehold.co/1920x1080/1F2937/FFFFFF?text=Log%C3%ADstica+CristonServ'">
             </div>
             <!-- Conteúdo do Hero -->
             <div class="relative z-10 text-center px-4 max-w-4xl section-animate">
@@ -56,10 +63,12 @@
                     Armazenagem, Movimentação e Transporte com segurança e eficiência que seu negócio exige.
                 </p>
                 <div class="space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#contato" class="inline-block px-10 py-4 bg-orange-500 text-white text-lg font-bold rounded-xl shadow-2xl hover:bg-orange-600 transition duration-300 transform hover:scale-105">
+                    <a href="#contato"
+                        class="inline-block px-10 py-4 bg-orange-500 text-white text-lg font-bold rounded-xl shadow-2xl hover:bg-orange-600 transition duration-300 transform hover:scale-105">
                         Solicitar Orçamento
                     </a>
-                    <a href="#servicos" class="inline-block px-10 py-4 bg-white text-gray-800 text-lg font-bold rounded-xl shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    <a href="#servicos"
+                        class="inline-block px-10 py-4 bg-white text-gray-800 text-lg font-bold rounded-xl shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
                         Conheça os Serviços
                     </a>
                 </div>
@@ -70,25 +79,36 @@
         <section id="sobre" class="py-20 bg-white section-animate">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Sobre a <span class="text-orange-500">CristonServ</span></h2>
-                    <p class="text-xl text-gray-600">Nossa missão é entregar valor através da excelência em logística e armazenagem.</p>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Sobre a <span
+                            class="text-orange-500">CristonServ</span></h2>
+                    <p class="text-xl text-gray-600">Nossa missão é entregar valor através da excelência em logística e
+                        armazenagem.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="space-y-6">
-                        <p class="text-lg text-gray-700">Com anos de experiência no setor, a CristonServ se estabeleceu como referência em soluções de locação e serviços. Nossa história é marcada pelo compromisso inabalável com a segurança, inovação tecnológica e o atendimento personalizado às necessidades de cada cliente.</p>
+                        <p class="text-lg text-gray-700">Com anos de experiência no setor, a CristonServ se estabeleceu
+                            como referência em soluções de locação e serviços. Nossa história é marcada pelo compromisso
+                            inabalável com a segurança, inovação tecnológica e o atendimento personalizado às
+                            necessidades de cada cliente.</p>
                         <h3 class="text-2xl font-semibold text-gray-900 mt-8">Nossos Valores Fundamentais</h3>
                         <ul class="list-none space-y-3 text-gray-700">
-                            <li class="flex items-center"><span class="text-orange-500 mr-3 text-xl">✓</span> Eficiência Operacional</li>
-                            <li class="flex items-center"><span class="text-orange-500 mr-3 text-xl">✓</span> Sustentabilidade e Segurança</li>
-                            <li class="flex items-center"><span class="text-orange-500 mr-3 text-xl">✓</span> Parceria e Foco no Cliente</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-3 text-xl">✓</span> Eficiência
+                                Operacional</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-3 text-xl">✓</span>
+                                Sustentabilidade e Segurança</li>
+                            <li class="flex items-center"><span class="text-orange-500 mr-3 text-xl">✓</span> Parceria e
+                                Foco no Cliente</li>
                         </ul>
-                        <a href="#" class="inline-block mt-6 text-orange-500 font-semibold hover:text-orange-700 transition duration-300">
+                        <a href="#"
+                            class="inline-block mt-6 text-orange-500 font-semibold hover:text-orange-700 transition duration-300">
                             Ver mais sobre nossa história &rarr;
                         </a>
                     </div>
                     <!-- Imagem da Equipe ou Armazém (Lazy Load) -->
                     <div class="lazy-load">
-                        <img src="https://placehold.co/600x400/FF7F00/FFFFFF?text=Foto+Interna+do+Galp%C3%A3o" alt="Armazém de alta capacidade" class="rounded-xl shadow-xl w-full h-auto object-cover" loading="lazy" onload="this.parentNode.classList.add('lazy-loaded');">
+                        <img src="/images/container.jpg" alt="Armazém de alta capacidade"
+                            class="rounded-xl shadow-xl w-full h-auto object-cover" loading="lazy"
+                            onload="this.parentNode.classList.add('lazy-loaded');">
                     </div>
                 </div>
             </div>
@@ -99,27 +119,34 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <span class="text-orange-500 uppercase tracking-wider font-semibold">O que fazemos</span>
-                    <h2 class="text-4xl font-bold text-gray-900 mt-2">Nossas Soluções em <span class="text-orange-500">Serviços</span></h2>
+                    <h2 class="text-4xl font-bold text-gray-900 mt-2">Nossas Soluções em <span
+                            class="text-orange-500">Serviços</span></h2>
                 </div>
                 <!-- Grid de Cards de Serviços -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Serviço 1 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-t-4 border-orange-500">
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-t-4 border-orange-500">
                         <div class="text-4xl text-orange-500 mb-4">⚙️</div>
                         <h3 class="text-xl font-bold mb-3 text-gray-900">Armazenagem e Estoque</h3>
-                        <p class="text-gray-600">Gestão completa de estoque, WMS moderno e segurança total para sua mercadoria.</p>
+                        <p class="text-gray-600">Gestão completa de estoque, WMS moderno e segurança total para sua
+                            mercadoria.</p>
                     </div>
                     <!-- Serviço 2 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-t-4 border-orange-500">
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-t-4 border-orange-500">
                         <div class="text-4xl text-orange-500 mb-4">🚚</div>
                         <h3 class="text-xl font-bold mb-3 text-gray-900">Transporte e Distribuição</h3>
-                        <p class="text-gray-600">Frota moderna e rastreada, garantindo a entrega rápida e segura em todo o território.</p>
+                        <p class="text-gray-600">Frota moderna e rastreada, garantindo a entrega rápida e segura em todo
+                            o território.</p>
                     </div>
                     <!-- Serviço 3 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-t-4 border-orange-500">
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-1 border-t-4 border-orange-500">
                         <div class="text-4xl text-orange-500 mb-4">🏢</div>
                         <h3 class="text-xl font-bold mb-3 text-gray-900">Locação de Equipamentos</h3>
-                        <p class="text-gray-600">Oferecemos locação de galpões e equipamentos pesados para otimizar suas operações.</p>
+                        <p class="text-gray-600">Oferecemos locação de galpões e equipamentos pesados para otimizar suas
+                            operações.</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +157,10 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <span class="text-orange-500 uppercase tracking-wider font-semibold">Fale Conosco</span>
-                    <h2 class="text-4xl font-bold text-gray-900 mt-2">Entre em <span class="text-orange-500">Contato</span></h2>
-                    <p class="text-lg text-gray-600 mt-4">Estamos prontos para atender suas necessidades de logística e serviços.</p>
+                    <h2 class="text-4xl font-bold text-gray-900 mt-2">Entre em <span
+                            class="text-orange-500">Contato</span></h2>
+                    <p class="text-lg text-gray-600 mt-4">Estamos prontos para atender suas necessidades de logística e
+                        serviços.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -140,17 +169,22 @@
                         <h3 class="text-2xl font-bold mb-6 text-gray-900">Envie sua Mensagem</h3>
                         <form id="contactForm">
                             <input type="text" placeholder="Seu Nome Completo" name="name" class="form-input" required>
-                            <input type="email" placeholder="Seu Melhor E-mail" name="email" class="form-input" required>
-                            <input type="tel" placeholder="Telefone/WhatsApp (Ex: (00) 99999-9999)" name="phone" class="form-input">
-                            <textarea placeholder="Sua Mensagem ou Pedido de Orçamento" name="message" rows="5" class="form-input resize-none" required></textarea>
-                            
+                            <input type="email" placeholder="Seu Melhor E-mail" name="email" class="form-input"
+                                required>
+                            <input type="tel" placeholder="Seu telefone" name="phone" class="form-input">
+                            <textarea placeholder="Sua Mensagem ou Pedido de Orçamento" name="message" rows="5"
+                                class="form-input resize-none" required></textarea>
+
                             <!-- Placeholder de Captcha / Lógica Anti-spam -->
                             <div class="mb-4 p-3 bg-white rounded-lg border border-gray-200">
-                                <label class="text-sm text-gray-600">Verificação Anti-spam: Qual é a soma de 3 + 5?</label>
-                                <input type="number" placeholder="Sua Resposta" name="captcha" class="form-input mt-1" required>
+                                <label class="text-sm text-gray-600">Verificação Anti-spam: Qual é a soma de 3 +
+                                    5?</label>
+                                <input type="number" placeholder="Sua Resposta" name="captcha" class="form-input mt-1"
+                                    required>
                             </div>
-                            
-                            <button type="submit" class="w-full py-3 bg-orange-500 text-white font-bold rounded-lg shadow-md hover:bg-orange-600 transition duration-300 transform hover:scale-[1.01]">
+
+                            <button type="submit"
+                                class="w-full py-3 bg-orange-500 text-white font-bold rounded-lg shadow-md hover:bg-orange-600 transition duration-300 transform hover:scale-[1.01]">
                                 Enviar Solicitação
                             </button>
                             <p id="formMessage" class="mt-4 text-center text-sm hidden"></p>
@@ -161,35 +195,24 @@
                     <div class="space-y-12">
                         <!-- Matriz -->
                         <div class="space-y-4">
-                            <h3 class="text-2xl font-bold text-gray-900">Matriz - Rio de Janeiro</h3>
+                            <h3 class="text-2xl font-bold text-gray-900">Matriz - Rio das Ostras</h3>
                             <p class="text-gray-700">
-                                📍 **Endereço:** Rua Exemplo, 123 - Centro, Rio de Janeiro/RJ - CEP 00000-000
+                                📍Rua João Pessoa, 272 Cs2 - Ouro verde, <br>Rio das Ostras/RJ - CEP 28895-406
                             </p>
                             <p class="text-gray-700">
-                                📞 **Telefone:** (21) 9999-0000 | 📱 <a href="https://wa.me/5521999990000" target="_blank" class="text-orange-500 hover:text-orange-600 font-semibold">WhatsApp</a>
+                                📞 (22) 99866-8351 | 📱 <a href="https://wa.me/5522998668351" target="_blank"
+                                    class="text-orange-500 hover:text-orange-600 font-semibold">WhatsApp</a>
                             </p>
                             <!-- Mapa Interativo (Placeholder/Iframe) -->
                             <div class="w-full h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md">
                                 <!-- Substituir o código abaixo por um iframe real do Google Maps -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1!2d-43.1970!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5a89f9e7f9%3A0x6d8b9d9c2a61e7a!2sRio+de+Janeiro%2FEstado+do+Rio+de+Janeiro!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!4v1762190331285!6m8!1m7!1smYgKgXhNLx5gSxEJ_I17fg!2m2!1d-22.50649295808288!2d-41.9242952235825!3f0!4f0!5f1.1924812503605782"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
 
-                        <!-- Filial -->
-                        <div class="space-y-4">
-                            <h3 class="text-2xl font-bold text-gray-900">Filial - São Paulo</h3>
-                            <p class="text-gray-700">
-                                📍 **Endereço:** Avenida Amostra, 456 - Bairro Industrial, São Paulo/SP - CEP 11111-111
-                            </p>
-                            <p class="text-gray-700">
-                                📞 **Telefone:** (11) 8888-0000 | 📱 <a href="https://wa.me/5511888880000" target="_blank" class="text-orange-500 hover:text-orange-600 font-semibold">WhatsApp</a>
-                            </p>
-                            <!-- Mapa Interativo (Placeholder/Iframe) -->
-                            <div class="w-full h-64 bg-gray-200 rounded-xl overflow-hidden shadow-md">
-                                <!-- Substituir o código abaixo por um iframe real do Google Maps -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce444d9f6b986b%3A0x1c83c9cc9d5b0a7!2sS%C3%A3o+Paulo%2FEstado+de+S%C3%A3o+Paulo!5e0!3m2!1spt-BR!2sbr!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -202,7 +225,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
             <!-- Coluna 1: Logo e Missão -->
             <div>
-                <a href="#home" class="text-2xl font-extrabold tracking-tight text-white mb-4 block"><span class="text-orange-500">Criston</span>Serv</a>
+                <a href="#home" class="text-2xl font-extrabold tracking-tight text-white mb-4 block"><span
+                        class="text-orange-500">Criston</span>Serv</a>
                 <p class="text-sm text-gray-400">Excelência em logística e armazenagem que impulsiona seu negócio.</p>
             </div>
             <!-- Coluna 2: Navegação -->
@@ -234,7 +258,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Direitos Autorais Atualizados -->
         <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
             &copy; <span id="currentYear"></span> CristonServ Locações e Serviços Ltda. Todos os direitos reservados.
@@ -246,5 +270,5 @@
     <script src="js/main.js" defer></script>
 
 </body>
-</html>
 
+</html>
